@@ -1,0 +1,45 @@
+@use '../util' as *;
+#tiles-artists,
+#tiles-albums {
+    height: 79vh;
+    margin: 1vh 0;
+}
+
+.tile {
+    position: absolute;
+    background-color: var(--black2);
+    margin: 0.5vw 0.5vw;
+    padding: 1vw 0.85vw;
+    padding-bottom: 0;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--lightgray);
+    height: min-content;
+    width: 11vw;
+    transition: 0.5s;
+}
+
+#panel-center1 .tile:hover {
+    transition: 0.2s;
+    background-color: var(--purple2);
+    opacity: 0.8;
+}
+
+.tile img {
+    width: 90%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 0.4vh;
+}
+
+.tile p.tile-title {
+    pointer-events: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 0 0.5vh 0;
+    font-size: 1.1vw;
+    opacity: 1;
+    transition: 0.2s;
+}

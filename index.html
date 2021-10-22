@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L.I.A.M</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script defer src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+    <style>
+        @font-face {
+            font-family: Font;
+            src: url(dist/ressources/PTSans-Bold.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="music" src="/dist/ressources/Infinity - Jaymes Young.mp3" type="audio/mp3"></audio>
+    <div id="panel-center1" class="panel">
+        <div id="tiles-artists">
+            <p id="title-artists">Artists</p>
+        </div>
+        <div id="tiles-albums">
+            <p id="title-albums">Albums</p>
+        </div>
+        <button id="scroll-down-button" class="material-icons-round">expand_more</button>
+        <button id="scroll-up-button" class="material-icons-round hide">expand_less</button>
+    </div>
+    <div id="panel-center2" class="panel hide">
+        <div id="content-center2">
+            <div id="title-album-center2">Albums</div>
+            <div id="artists-slide-center2"></div>
+            <div id="title-songs-center2">Songs</div>
+            <div id="songs-container-center2"></div>
+        </div>
+        <div id="header-center2">
+            <div id="title-header-center2" class="overlay-header-center2"></div>
+        </div>
+        <button id="back-center2" class="material-icons-round">chevron_left</button>
+    </div>
+    <div id="panel-center-overlay" class="panel"></div>
+    <div id="panel-right" class="panel"></div>
+    <div id="panel-bot" class="panel">
+        <div id="panel-top" class="panel">
+            <div id="top-title">Library Innocent And Musical</div>
+        </div>
+        <div id="song-controls">
+            <button id="button-previous" class="material-icons-round">skip_previous</button>
+            <button id="button-play" class="material-icons-round">play_arrow</button>
+            <button id="button-next" class="material-icons-round">skip_next</button>
+        </div>
+        <div id="song-timer-container">
+            <p id="current-time" class="song-timer"></p>
+            <div id="song-progress">
+                <div id="song-progress-fill"></div>
+            </div>
+            <p id="duration" class="song-timer"></p>
+        </div>
+        <div id="volume">
+            <button id="volume-button" class="material-icons-round">volume_up</button>
+            <div id="volume-slider">
+                <div id="volume-slider-fill"></div>
+                <input type="range" id="volume-slider-thumb" min="0" max="100" step="1">
+            </div>
+        </div>
+    </div>
+    <div id="overlay-error">
+        <p>Device or window's size not supported, this app is designed for computer and fullscreen.</p>
+    </div>
+    <script src="dist/firebase-app.js"></script>
+    <script src="dist/firebase-firestore.js"></script>
+    <script type="module" src="dist/script.js"></script>
+</body>
+
+</html>

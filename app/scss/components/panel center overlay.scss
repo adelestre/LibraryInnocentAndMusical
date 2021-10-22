@@ -1,0 +1,13 @@
+@use '../util' as *;
+#panel-center-overlay {
+    position: fixed;
+    background: none;
+    top: 90px;
+    bottom: 90px;
+    left: 15%;
+    width: 85%;
+    margin-top: 1vh;
+    transition: 1s;
+    pointer-events: none;
+    margin: 0;
+}

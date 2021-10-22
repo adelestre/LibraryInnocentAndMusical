@@ -1,0 +1,15 @@
+@use '../util' as *;
+#panel-right {
+    position: fixed;
+    background-color: var(--black2);
+    top: 0;
+    left: 0;
+    height: 900%;
+    width: 15%;
+    overflow-y: hidden;
+    border-right: 3px solid var(--purple2);
+}
+
+#panel-right:hover {
+    overflow-y: scroll;
+}

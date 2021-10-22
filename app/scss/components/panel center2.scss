@@ -1,0 +1,109 @@
+@use '../util' as *;
+#panel-center2 {
+    position: fixed;
+    background-color: var(--black);
+    top: 90px;
+    left: 15%;
+    bottom: 90px;
+    width: 85%;
+    transition: 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#panel-center2.hide {
+    left: 100%;
+}
+
+#header-center2 {
+    position: absolute;
+    background: none;
+    top: 0;
+    height: 150px;
+    left: 0;
+    width: 100%;
+    transition: 1s;
+    background-color: var(--black2);
+    //border-bottom: 3px solid var(--purple2);
+}
+
+.overlay-header-center2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#title-header-center2 {
+    width: 100%;
+}
+
+#title-header-center2 p {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    margin: 0;
+    font-size: 50px;
+    text-align: left;
+    color: var(--lightgray);
+}
+
+#artist-bio {
+    top: 50%;
+    font-size: 18px;
+    text-align: left;
+    color: var(--lightgray);
+    overflow-x: auto;
+    transition: 0.5s;
+    width: 80%;
+}
+
+.overlay-header-center2.show {
+    left: 230px;
+}
+
+.tile.tile-selected {
+    position: absolute;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    margin: 10px 0px;
+    padding: 0 0 17px 0 17px;
+    height: 130px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.tile.tile-selected img {
+    padding: 0;
+    margin: 0;
+    width: 130px;
+    border-radius: 100%;
+}
+
+.tile.tile-selected p {
+    opacity: 0;
+    transform: scale(0);
+}
+
+#back-center2 {
+    position: sticky;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: 0.3s;
+    color: var(--lightgray);
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+}
+
+#back-center2:hover {
+    background: linear-gradient(to left, transparent, var(--purple220));
+}

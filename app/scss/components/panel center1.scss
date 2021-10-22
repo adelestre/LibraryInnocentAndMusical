@@ -1,0 +1,65 @@
+@use '../util' as *;
+#panel-center1 {
+    position: fixed;
+    background-color: var(--black);
+    top: 90px;
+    bottom: 90px;
+    left: 15%;
+    width: 85%;
+    overflow-y: visible;
+    margin-top: 1vh;
+    transition: 0.5s;
+    margin: 0;
+}
+
+#panel-center1.hide {
+    left: -70%;
+}
+
+#panel-center1.scroll-down {
+    top: -70.4%
+}
+
+#title-artists,
+#title-albums {
+    color: var(--lightgray);
+    font-size: 30px;
+    margin: 0 1vw;
+    margin-left: 1.2vw;
+}
+
+#scroll-down-button,
+#scroll-up-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    width: 100%;
+    color: var(--lightgray);
+    background: none;
+    opacity: 0.7;
+    border: none;
+    transition: 0.2s;
+    outline: none;
+}
+
+#scroll-down-button:hover {
+    background: linear-gradient(transparent, var(--purple2));
+}
+
+#scroll-down-button {
+    bottom: 0;
+}
+
+#scroll-up-button {
+    top: 50.5%;
+    transform: translate(-50%, -50.5%);
+}
+
+#scroll-up-button:hover {
+    background: linear-gradient(var(--purple2), transparent);
+}
+
+button.hide {
+    display: none;
+}

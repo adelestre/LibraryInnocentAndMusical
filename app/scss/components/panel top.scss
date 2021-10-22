@@ -1,0 +1,20 @@
+@use '../util' as *;
+#panel-top {
+    position: fixed;
+    background-color: var(--black1);
+    top: 0;
+    height: 90px;
+    left: 15%;
+    width: 100%;
+    border-bottom: 3px solid var(--purple2);
+}
+
+#top-title {
+    position: relative;
+    overflow: hidden;
+    overflow-x: hidden;
+    color: var(--lightgray);
+    font-size: 60px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}

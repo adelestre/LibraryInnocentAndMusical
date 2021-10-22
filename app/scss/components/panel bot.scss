@@ -1,0 +1,9 @@
+@use '../util' as *;
+#panel-bot {
+    position: fixed;
+    background-color: var(--black2);
+    bottom: 0%;
+    left: 15%;
+    height: 90px;
+    width: 85%;
+}
